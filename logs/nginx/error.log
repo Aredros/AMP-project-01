@@ -1,0 +1,2 @@
+2020/12/30 16:06:03 [error] 18832#4336: *1139 upstream timed out (10060: FormatMessage() error:(15100)) while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-admin/tools.php?page=wp-static-html-output-options HTTP/1.1", upstream: "fastcgi://127.0.0.1:10014", host: "localhost:10016", referrer: "http://localhost:10016/wp-admin/tools.php?page=wp-static-html-output-options"
+2021/01/03 00:18:20 [alert] 17004#7080: OpenEvent("ngx_master_9892") failed (2: FormatMessage() error:(15100))
