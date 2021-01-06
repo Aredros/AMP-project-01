@@ -19944,3 +19944,23 @@ Stack trace:
 [06-Jan-2021 09:10:19 UTC] PHP   7. wpdb->__construct() C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\load.php:527
 [06-Jan-2021 09:10:19 UTC] PHP   8. wpdb->db_connect() C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\wp-db.php:632
 [06-Jan-2021 09:10:19 UTC] PHP   9. mysqli_real_connect() C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\wp-db.php:1653
+[06-Jan-2021 18:05:09 UTC] PHP Notice:  Undefined variable: menu_class in C:\Users\cheonew\Local Sites\amptest\app\public\wp-content\themes\Amptheme1\template-parts\header\navi.php on line 9
+[06-Jan-2021 18:05:09 UTC] PHP Stack trace:
+[06-Jan-2021 18:05:09 UTC] PHP   1. {main}() C:\Users\cheonew\Local Sites\amptest\app\public\index.php:0
+[06-Jan-2021 18:05:09 UTC] PHP   2. require() C:\Users\cheonew\Local Sites\amptest\app\public\index.php:17
+[06-Jan-2021 18:05:09 UTC] PHP   3. require_once() C:\Users\cheonew\Local Sites\amptest\app\public\wp-blog-header.php:19
+[06-Jan-2021 18:05:09 UTC] PHP   4. include() C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\template-loader.php:106
+[06-Jan-2021 18:05:09 UTC] PHP   5. get_template_part() C:\Users\cheonew\Local Sites\amptest\app\public\wp-content\themes\Amptheme1\front-page.php:90
+[06-Jan-2021 18:05:09 UTC] PHP   6. locate_template() C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\general-template.php:204
+[06-Jan-2021 18:05:09 UTC] PHP   7. load_template() C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\template.php:676
+[06-Jan-2021 18:05:09 UTC] PHP   8. require() C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\template.php:732
+[06-Jan-2021 18:05:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_menu_id() on null in C:\Users\cheonew\Local Sites\amptest\app\public\wp-content\themes\Amptheme1\template-parts\header\navi.php:9
+Stack trace:
+#0 C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\template.php(732): require()
+#1 C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\template.php(676): load_template('C:\\Users\\cheone...', false, Array)
+#2 C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\cheonew\Local Sites\amptest\app\public\wp-content\themes\Amptheme1\front-page.php(90): get_template_part('template-parts/...')
+#4 C:\Users\cheonew\Local Sites\amptest\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\cheone...')
+#5 C:\Users\cheonew\Local Sites\amptest\app\public\wp-blog-header.php(19): require_once('C:\\Users\\cheone...')
+#6 C:\Users\cheonew\Local Sites\amptest\app\public\index.php(17): require('C:\\Users\\cheone...')
+#7 {ma in C:\Users\cheonew\Local Sites\amptest\app\public\wp-content\themes\Amptheme1\template-parts\header\navi.php on line 9
